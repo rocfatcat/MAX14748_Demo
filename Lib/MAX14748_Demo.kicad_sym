@@ -1314,27 +1314,49 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "NX5P2924B"
+	(symbol "NX5P2924DUKZ"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
-			(at -5.842 6.35 0)
+		(property "Reference" "IC"
+			(at 29.21 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "NX5P2924DUKZ"
+			(at 29.21 5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BGA6C50P2X3_89X139X50"
+			(at 29.21 -94.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.tw/datasheet/2/302/NX5P2924D-3051736.pdf"
+			(at 29.21 -194.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power Switch ICs - Power Distribution Logic-Controlled High-Side Power Switch"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1343,42 +1365,92 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 0)
+		(property "Height" "0.5"
+			(at 29.21 -394.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Manufacturer_Name" "NXP"
+			(at 29.21 -494.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(symbol "NX5P2924B_0_1"
+		(property "Manufacturer_Part_Number" "NX5P2924DUKZ"
+			(at 29.21 -594.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 29.21 -694.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 29.21 -794.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 29.21 -894.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 29.21 -994.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(symbol "NX5P2924DUKZ_1_1"
 			(rectangle
-				(start -6.35 5.08)
-				(end 6.35 -5.08)
+				(start 5.08 2.54)
+				(end 27.94 -7.62)
 				(stroke
-					(width 0)
+					(width 0.254)
 					(type default)
 				)
 				(fill
 					(type background)
 				)
 			)
-		)
-		(symbol "NX5P2924B_1_1"
-			(pin power_out line
-				(at -8.89 2.54 0)
-				(length 2.54)
-				(name "VOUT"
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
+				(name "VOUT_1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1393,10 +1465,28 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at -8.89 0 0)
-				(length 2.54)
-				(name "VOUT"
+			(pin passive line
+				(at 0 -2.54 0)
+				(length 5.08)
+				(name "VIN_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 0)
+				(length 5.08)
+				(name "VOUT_2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1411,9 +1501,27 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -8.89 -2.54 0)
-				(length 2.54)
+			(pin passive line
+				(at 33.02 0 180)
+				(length 5.08)
+				(name "VIN_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 33.02 -2.54 180)
+				(length 5.08)
 				(name "GND"
 					(effects
 						(font
@@ -1429,45 +1537,9 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 8.89 2.54 180)
-				(length 2.54)
-				(name "VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 8.89 0 180)
-				(length 2.54)
-				(name "VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 8.89 -2.54 180)
-				(length 2.54)
+			(pin passive line
+				(at 33.02 -5.08 180)
+				(length 5.08)
 				(name "EN"
 					(effects
 						(font
